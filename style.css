@@ -1,0 +1,38 @@
+body {
+    margin: 20px;
+    padding: 0;
+    background-color: lavender;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    border: 3px solid black;
+    background-color: black;
+}
+
+.big-img img,
+.thumbnails img {
+    width: 100%;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fade-in 0.4s ease-in 1 forwards;
+}
